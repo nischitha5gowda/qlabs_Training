@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="a.html" method="get"></form>
+    <form action="employeeReg.html" method="get">
     <fieldset>
         <legend>Personal Information</legend>
     
@@ -80,12 +80,6 @@
         <option>python</option>
         </select>
         <br><br>
-        <label for="skills">Technical_Skills:</label>
-        <select id="skills">
-          <option>java</option>
-        <option>python</option>
-        </select>
-        <br><br>
         <label for="hobby">Hobbies:</label>
         <select id="hobby">
           <option>Singing</option>
@@ -101,13 +95,13 @@
         <input type="checkbox">Hindi
         <input type="checkbox"> <input type="text"><br><br>
         <label for="ln">Work_Experience:</label>
-        <input type="checkbox">Fresher
-        <input type="checkbox">Years of Experience <input type="text"><br><br>
+        <input type="radio" name="Fresher" >Fresher
+        <input type="radio" name="Experience" >Years of Experience <input type="text"><br><br>
         <label for="ln">Experienced_Field:</label>
         <input type="text"><br><br>
         <label for="resume">Resume:</label>
             <input type="file" id="resume" name="resume" > <br><br>
-            <label for="resume">Resume:</label>
+            <label for="resume">photo:</label>
             <input type="file" id="photo" name="resume" maxlength="40kb"> <br><br>
             <label for="resume">signature:</label>
             <input type="file" id="sign" name="sign" maxlength="40kb"> <br><br>
@@ -116,10 +110,6 @@
             <input type="Submit">
 
     </fieldset>
-
-
-
-        
     <br><br>
       </form>
     
