@@ -7,43 +7,46 @@
     <title>Document</title>
 </head>
 <body>
+  <h1>Employee Registartion form</h1>
     <form action="employeeReg.html" method="get">
     <fieldset>
         <legend>Personal Information</legend>
     
         <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
+        <input type="text" id="fname" name="fname" placeholder="First_name"  maxlength="30"><br><br>
         <label for="mname">Middle name:</label>
-        <input type="text" id="fname" name="mname"><br><br>
+        <input type="text" id="mname" name="mname" placeholder="Middle_name" maxlength="30"><br><br>
         <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
+        <input type="text" id="lname" name="lname" placeholder="Last_name" maxlength="30"><br><br>
         <label for="dob">DOB:</label>
-        <input type="text" id="dob" name="DOB"><br><br>
-        <label for="gender">Gender:</label>
-        <input type="radio" value="Male" name="Gender">Male
-        <input type="radio" value="Female" name="Gender">Female <br><br>
-        <label for="phone_number">phone_number:</label>
-        <input type="text" id="phone_number" name="phone_number"><br><br>
+        <input type="date" id="dob" name="DOB"><br><br>
+        <label>Gender:</label>
+        <input type="radio" value="Male" name="Gender" id="Male"><label for="Male">Male</label>
+        <input type="radio" value="Female" name="Gender" id="Female"><label for="Female">Female</label> <br><br>
+        <label for="phone_number">Phone_number:</label>
+        <input type="number" id="phone_number" name="phone_number"><br><br>
         <label for="Mail_id">Mail_id:</label>
-        <input type="email" id="Mail_id" name="Mail_id"><br><br></fieldset>
+        <input type="email" id="Mail_id" name="Mail_id" placeholder="enter your mail_id"><br><br></fieldset>
         <fieldset>
             <legend>Address</legend><br><br>
-            <label for="P_add">Permanent Address:</label>
-        <input type="text" id="P_add" name="P_add"><br><br>
-        <label for="P_add">Present Address:</label>
-        <input type="text" id="Pr_add" name="Pr_add"><br><br>
-        <label for="P_code">Pin_Code:</label>
-        <input type="text" id="P_code" name="P_code" maxlength="6"><br><br>
+            <label>Permanent Address</label><br>
+            <textarea id="per_add" name="p_add" rows="4" cols="50" maxlength="200"></textarea><br><br>
+        <label>Present Address:</label><br>
+        <textarea id="pre_add" name="p_add" rows="4" cols="50" maxlength="200"></textarea><br><br>
+        <label>Pin_Code:</label>
+        <input type="text" id="Pin_code" name="P_code" maxlength="6"><br><br>
         <label for="st">State:</label>
           <select id="st">
             <option>Karnataka</option>
           <option>Goa</option>
+          <option>Telangana</option>
           </select>
           <br><br>
           <label for="ct">Country:</label>
           <select id="ct">
             <option>India</option>
           <option>bangladesh</option>
+          <option>England</option>
           </select>
           <br><br>
           <label for="Ac">Adhar_Card:</label>
@@ -52,64 +55,69 @@
           </fieldset>
           <fieldset>
             <legend>Qualification</legend>
-            <label for="qua">10th:</label>
+            <label>10th:</label>
+            <input type="text" placeholder="% or CGPA" >
+            <input type="text" placeholder="year of passedout"> &emsp;
+               <label>Certifiate:</label>
+            <input type="file" id="10th" name="qua"><br><br>
+            <label>12th or diploma:</label>
+            <input type="text" placeholder="% or CGPA" >
+            <input type="text" placeholder="year of passedout"> &emsp;
+            <label>Certifiate:</label>
+            <input type="file" id="12th(or)diploma" name="qua"> <br> <br>
+            <label>Degree:</label>
+            <input type="text" placeholder="% or CGPA" >
+            <input type="text" placeholder="year of passedout"> &emsp;
+            <label>Certifiate:</label>
+            <input type="file" id="Degree" name="qua"> <br><br>
+            <!---label for="qua">Postgraduation:</label>
             <input type="text" placeholder="% or CGPA" >
             <input type="text" placeholder="year of passedout">
-            <input type="file" id="qua" name="qua"><br><br>
-            <label for="qua">12th or diploma:</label>
-            <input type="text" placeholder="% or CGPA" >
-            <input type="text" placeholder="year of passedout">
-            <input type="file" id="qua" name="qua"> <br> <br>
-            <label for="qua">degree:</label>
-            <input type="text" placeholder="% or CGPA" >
-            <input type="text" placeholder="year of passedout">
-            <input type="file" id="qua" name="qua"> <br><br>
-            <label for="qua">Postgraduation:</label>
-            <input type="text" placeholder="% or CGPA" >
-            <input type="text" placeholder="year of passedout">
-            <input type="file" id="qua" name="qua"> <br><br>
-            <label for="qua">Other_Cources:</label>
-            <input type="text" placeholder="Training">
-            <input type="file" id="qua" name="qua"> <br><br>
+            <label>10th Marks Card</label>
+            <input type="file" id="qua" name="qua"> <br><br-->
+            <label>Other_Cources:</label>
+            <input type="text" placeholder="Cources"> &emsp;
+            <label>Certifiate:</label>
+            <input type="file" id="Other" name="qua"> <br><br>
       </fieldset>
       <fieldset>
         <legend>Other Information</legend>
-        <label for="skills">Technical_Skills:</label>
-        <select id="skills">
-          <option>java</option>
-        <option>python</option>
-        </select>
-        <br><br>
-        <label for="hobby">Hobbies:</label>
-        <select id="hobby">
-          <option>Singing</option>
-        <option>Dancing</option>
-        </select>
-        <label for="others">Others:</label>
-        <select id="others">
-            <input type="text">
-        <br><br>
-        <label for="ln">Languages Known:</label>
+        <label>Technical_Skills:</label>
+        <input type="checkbox">java
+        <input type="checkbox">python
+        <input type="checkbox">HTML
+        <input type="checkbox">others<input type="text"><br><br>
+        <label>Hobbies:</label>
+        <input type="checkbox">Singing
+        <input type="checkbox">Dancing
+        <input type="checkbox">Reading
+        <input type="checkbox">others <input type="text"><br><br>
+        <label>Languages Known:</label>
         <input type="checkbox">Kannada
         <input type="checkbox">English
         <input type="checkbox">Hindi
-        <input type="checkbox"> <input type="text"><br><br>
-        <label for="ln">Work_Experience:</label>
-        <input type="radio" name="Fresher" >Fresher
-        <input type="radio" name="Experience" >Years of Experience <input type="text"><br><br>
-        <label for="ln">Experienced_Field:</label>
-        <input type="text"><br><br>
+        <input type="checkbox">others <input type="text"><br><br>
+      
+      
+        <label>Work_Experience:</label><br><br>
+        <input type="radio" id="Fresher" name="Fresher" ><label for="Fresher">Fresher</label> &#160;&#160;
+        <label>Year of passedout</label>
+        <input type="number"><br><br>
+        <input type="radio" id="Experienced" name="Fresher"><label for="Experienced">Experienced </label> &#160;&#160;
+        <label>Years of Experience</label>
+         <input type="number"><br><br>
         <label for="resume">Resume:</label>
-            <input type="file" id="resume" name="resume" > <br><br>
-            <label for="resume">photo:</label>
-            <input type="file" id="photo" name="resume" maxlength="40kb"> <br><br>
-            <label for="resume">signature:</label>
-            <input type="file" id="sign" name="sign" maxlength="40kb"> <br><br>
-            <a href="qualesce.com">Company_Link</a>
+            <input type="file" id="resume" name="resume"> <br><br>
+            <label for="resume">Photo:</label>
+            <input type="file" id="photo" name="resume"> <br><br>
+            <label for="resume">Signature:</label>
+            <input type="file" id="sign" name="sign"> <br><br>
+            
+      </fieldset>
+            <a href="https://www.qualesce.com/">Company_Link</a>
             <br><br>
             <input type="Submit">
 
-    </fieldset>
     <br><br>
       </form>
     
