@@ -1,0 +1,81 @@
+/*universal selector tag starts*/
+*
+{
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+}
+/* universal selector tag ends*/
+/*header css starts*/
+.headerContainer{
+     background-color: rgb(83, 108, 138);
+     text-align: center;
+}
+/*header css ends*/
+/*all wrapper classes starts*/
+
+.flowerSec1Wrapper{
+    max-width: 1200px;
+}
+/*all wrapper clases ends*/
+
+/*sectioin1 css starts*/
+.flowerSec1Container{
+    background-color: rgb(83, 102, 199);
+  
+}
+.flowerSec1Container h2{
+    text-align: center;
+ }
+ .flowerSec1Wrapper{
+    background-color: rgb(166, 201, 234);
+   
+ }
+
+ 
+.flowerSec1Wrapper article {
+
+    display:inline-block;
+    width: 300px;
+    background-color: rgb(150, 192, 231);
+    margin:0 40px;
+    box-shadow: 6px 5px 5px 6px gray;
+ }
+ .roses h3,
+ .carnations h3{
+    margin:0 0 10px 0;
+ }
+ .roses p,
+ .carnations p{
+    margin: 10px;
+}
+    .roses a,
+    .carnations a{
+        border: 2px solid rgb(22, 156, 116);
+        margin:0 0 5px 10px;
+        padding: 5px;
+        text-decoration: none;
+        
+    }
+   .knowmore:hover{
+        border: 2px solid rgb(217, 225, 232) ;
+        background-color: rgb(71, 201, 197);
+        color:azure
+    }
+    .info:hover{
+        border: 2px solid rgb(217, 225, 232) ;
+        background-color: rgba(42, 128, 171, 0.452);
+        color:azure
+    }
+    .download:hover{
+        border: 2px solid rgb(217, 225, 232) ;
+        background-color: rgba(0, 140, 255, 0.861);
+        color:azure
+    }
+    .download1:hover{
+        border: 2px solid rgb(217, 225, 232) ;
+        background-color: rgba(131, 184, 16, 0.452);
+        color:azure
+    }
+ 
+/*section1 css ends*/
