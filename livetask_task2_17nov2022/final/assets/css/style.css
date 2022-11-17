@@ -1,0 +1,118 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1{
+    padding:0 0px 20px 30px;
+    
+    font-weight:600;
+    font-size: 30px;
+  }
+  form{
+   border:0.5px solid grey;
+   padding:30px 35px 20px 10px;
+   border-radius: 13px;
+   margin-right: 160px;
+   margin-bottom: 30px;
+   }
+   .p{
+      position: fixed;
+       right: 50px;
+   }
+  .cross{
+    position: fixed;
+    right:0;
+  }
+  form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  label {
+    /* display: block; */
+    margin: 0 0 4px 0;
+    padding: 0 0 10px 10px;
+    color: rgba(11, 11, 11, 0.831);
+    font-weight: bold;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    font-size: medium;
+    padding: 10px 120px;;
+    margin:15px 5px 20px 20px;
+    width: 340px;
+    color: white;
+    cursor: pointer;
+    background-color:#04aa6d;
+    border-radius: 14px;
+    text-align: center;
+    
+  }
+  input[type="submit"]:hover{
+    background-color: #198754;
+  }
+  input[type="text"] {
+    margin: 10px 80px 15px 22px;
+    padding: 20px 50px 20px 70px;
+    width: 340px;
+    border-radius: 4px;
+  }
+  .sign
+   {
+      
+    margin-left: 110px;
+    font-weight: normal;
+    
+   }
+   .show{
+    background:url(/assets/img/eyes.png)no-repeat;
+     position: fixed;
+     padding:8px 35px;
+     background-position:-3px;
+     background-position-x: 16px;
+    margin-left: 190px;
+    font-weight: normal;
+   }
+   label[for="email"],
+   label[for="password"]
+   {
+    margin-left:20px;
+    
+   }
+   .forgot{
+    margin-left:150px;
+    text-decoration: none;
+   }
+   .foot[type="foot"]{
+       margin-left: 400px;
+       
+   }
+   .foot{
+    margin-top: 500px;
+    text-align: center;
+   
+   }
+   .up{
+    color: #04aa6d;
+    text-decoration: none;
+   }
+   .right,
+   .w3{
+    color: rgba(40,42,53,.65);
+   }
+   .w3:hover,
+   .forgot:hover{
+    color: #04aa6d;
+   }
+   [type="button"]{
+    background-color:#04aa6d ;
+    color:white;
+    padding: 15px;
+    border: 18px;
+    border-radius: 10px;
+
+   }
